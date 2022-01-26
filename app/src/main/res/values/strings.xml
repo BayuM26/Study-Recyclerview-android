@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">IndonesianFood</string>
+    <string name="food_name">Food Name</string>
+    <string name="Bahan">Bahan Makanan</string>
+    <string name="DaerahAsal">Daerah Asal</string>
+    <string name="Nama">Bayu Maulana</string>
+    <string name="email">bayu.maulana669@gmail.com</string>
+    <string name="noHP">08987570848</string>
+    <string name="namapakar">Nur Hafiffah From Major Gizi</string>
+    <string name="kontakku">My Contact</string>
+    <string name="EMAIL">Email :</string>
+    <string name="no_telp">No telp :</string>
+    <string name="special_thanks">Special Thanks For</string>
+    <string name="asal_makanan">Asal Makanan :</string>
+    <string name="nama_makanan">Nama Makanan :</string>
+    <string name="about">About</string>
+    <string name="nlai_gizi_makanan">Nlai gizi makanan / 100gr</string>
+    <string name="FGnama">Nama Bahan</string>
+    <string name="FGvit_c">Vit-C :</string>
+    <string name="FGkalsium">Kalsium :</string>
+    <string name="FGserat">Serat :</string>
+    <string name="FGlemak">Lemak :</string>
+    <string name="FGbesi">Besi :</string>
+    <string name="FGprotein">Protein :</string>
+    <string name="FGenergi">Energi :</string>
+    <string name="deskripsi_makanan">deskripsi makanan :</string>
+    <string name="gizi">Gizi</string>
+    <string name="nilai_gizi">Nilai Gizi</string>
+</resources>

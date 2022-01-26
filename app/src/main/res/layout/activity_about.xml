@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".About">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/img"/>
+
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/Nama"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/textProfile"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="@string/kontakku"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <TableRow
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    style="@style/textProfile"
+                    android:text="@string/EMAIL" />
+
+                <TextView
+                    style="@style/textProfile"
+                    android:text="@string/email"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    style="@style/textProfile"
+                    android:text="@string/no_telp" />
+
+                <TextView
+                    style="@style/textProfile"
+                    android:text="@string/noHP" />
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            style="@style/textProfile"
+            android:layout_marginTop ="30dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/special_thanks"/>
+
+        <TextView
+            style="@style/textProfile"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="@string/namapakar"/>
+
+    </LinearLayout>
+</ScrollView>

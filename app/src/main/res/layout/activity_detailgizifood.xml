@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/detail_food_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/food_name"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/image_detailgizi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35000002" />
+
+    <ImageView
+        android:id="@+id/image_detailgizi"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/bobengka"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <TableLayout
+        android:id="@+id/tableLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_detailgizi">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/asal_makanan"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detail_asal_makanan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="@string/DaerahAsal"
+                android:textSize="14sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/deskripsi_makanan"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/deskripFood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:text="@string/deskripsi_makanan"
+                android:textSize="14sp" />
+
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/listgizitext"
+        android:layout_width="281dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/nlai_gizi_makanan"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout3"
+        app:layout_constraintVertical_bias="0.100000024" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.048">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            tools:ignore="UselessParent">
+
+            <TextView
+                style="@style/listgizitext"
+                android:text="@string/gizi"
+                android:textStyle="bold" />
+
+            <TextView
+            style="@style/listgizitext"
+            android:text="@string/nilai_gizi"
+            android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            tools:ignore="UselessParent">
+
+            <TextView
+                style="@style/listgizitext"
+                android:text="@string/FGenergi"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/FGenergi"
+                style="@style/listgizitext"
+                android:text="@string/FGenergi" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textAlignment="center"
+            tools:ignore="UselessParent">
+
+            <TextView
+                style="@style/listgizitext"
+                android:text="@string/FGprotein"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/FGprotein"
+                style="@style/listgizitext"
+                android:text="@string/FGprotein" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textAlignment="center"
+            tools:ignore="UselessParent">
+
+            <TextView
+                style="@style/listgizitext"
+                android:text="@string/FGbesi"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/FGbesi"
+                style="@style/listgizitext"
+                android:text="@string/FGbesi" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textAlignment="center"
+            tools:ignore="UselessParent">
+
+            <TextView
+                style="@style/listgizitext"
+                android:text="@string/FGlemak"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/FGlemak"
+                style="@style/listgizitext"
+                android:text="@string/FGlemak" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textAlignment="center"
+            tools:ignore="UselessParent">
+
+            <TextView
+                style="@style/listgizitext"
+                android:text="@string/FGserat"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/FGserat"
+                style="@style/listgizitext"
+                android:text="@string/FGserat" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textAlignment="center"
+            tools:ignore="UselessParent">
+
+            <TextView
+                style="@style/listgizitext"
+                android:text="@string/FGkalsium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/FGkalsium"
+                style="@style/listgizitext"
+                android:text="@string/FGkalsium" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textAlignment="center"
+            tools:ignore="UselessParent">
+
+            <TextView
+                style="@style/listgizitext"
+                android:text="@string/FGvit_c"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/FGvit_c"
+                style="@style/listgizitext"
+                android:text="@string/FGvit_c" />
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
